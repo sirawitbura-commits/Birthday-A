@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/birthday-surprise/"
+title = "Birthday Surprise"
+description = "A playful Thai birthday greeting page where recipients open a gift, read a personal birthday message, and reveal a redeemable gift coupon."
+version = "1.0.0"
+id = "artifacts/birthday-surprise"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/birthday-surprise/" ]
+localPort = 25201
+
+[services.development]
+run = "pnpm --filter @workspace/birthday-surprise run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/birthday-surprise", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/birthday-surprise/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25201"
+BASE_PATH = "/birthday-surprise/"
