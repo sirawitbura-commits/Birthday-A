@@ -489,8 +489,8 @@ function Home() {
                       "เปิดเพื่อดูข้อความและของขวัญส่งถึงคุณ"
                     ) : (
                       <>
-                        <span aria-hidden="true">🔒 </span>
                         <br />
+                        <span aria-hidden="true">🔒 </span>
                         เปิดได้หลังวันที่{" "}
                         <time dateTime="2026-10-12T00:01:00+07:00">
                           12 ตุลาคม 2569
