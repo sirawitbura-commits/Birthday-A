@@ -490,6 +490,7 @@ function Home() {
                     ) : (
                       <>
                         <span aria-hidden="true">🔒 </span>
+                        <br />
                         เปิดได้หลังวันที่{" "}
                         <time dateTime="2026-10-12T00:01:00+07:00">
                           12 ตุลาคม 2569
