@@ -463,6 +463,7 @@ function Home() {
                   >
                     ✨ มีข้อความและของขวัญส่งถึงคุณ ✨
                   </h1>
+                  <br/>
                   <button
                     className="primary-action gift-open-action"
                     data-testid="button-open-gift"
@@ -480,7 +481,7 @@ function Home() {
                       {giftIsUnlocked ? "กดเพื่อเปิด" : "ยังเปิดไม่ได้"}
                     </span>
                   </button>
-                  <br />
+                  <br/><br/>
                   <p
                     aria-live="polite"
                     className={`tiny-note ${giftIsUnlocked ? "" : "gift-lock-note"}`}
