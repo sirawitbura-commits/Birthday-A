@@ -144,7 +144,7 @@ function playSoftCelebrationSound() {
 }
 
 function Home() {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
   const [giftIsUnlocked, setGiftIsUnlocked] = useState(() => Date.now() >= GIFT_UNLOCK_AT);
   const [celebration, setCelebration] = useState(0);
   const [celebrationKind, setCelebrationKind] = useState<'gift' | 'coupon'>('gift');
