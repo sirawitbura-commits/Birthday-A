@@ -32,9 +32,9 @@ const birthdayPhotos = [
 const GIFT_UNLOCK_AT = Date.parse("2026-10-12T00:01:00+07:00");
 
 const couponPerks = [
-  { icon: "🍕", title: "คูปองกินพิซซ่าด้วยกัน (ฟรี)" },
+  { icon: "🍕", title: "คูปองกินบุฟเฟ่ต์หรือพิซซ่าด้วยกัน(ฟรี)" },
   { icon: "🍸", title: "คูปองไปดื่มเบียร์ด้วยกัน" },
-  { icon: "🧳", title: "คูปองชวนไปออกทริปด้วยกัน" },
+  { icon: "🧳", title: "คูปองไปออกทริปด้วยกัน" },
 ];
 
 type YouTubePlayer = {
