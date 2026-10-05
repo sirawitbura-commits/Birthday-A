@@ -480,6 +480,7 @@ function Home() {
                       {giftIsUnlocked ? "กดเพื่อเปิด" : "ยังเปิดไม่ได้"}
                     </span>
                   </button>
+                  <br />
                   <p
                     aria-live="polite"
                     className={`tiny-note ${giftIsUnlocked ? "" : "gift-lock-note"}`}
@@ -489,7 +490,6 @@ function Home() {
                       "เปิดเพื่อดูข้อความและของขวัญส่งถึงคุณ"
                     ) : (
                       <>
-                        <br />
                         <span aria-hidden="true">🔒 </span>
                         เปิดได้หลังวันที่{" "}
                         <time dateTime="2026-10-12T00:01:00+07:00">
